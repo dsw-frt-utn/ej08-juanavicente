@@ -93,6 +93,27 @@
             Console.ReadKey();
             Console.Clear();
 
+            Thread.Sleep(1500);
+
+            // =========================
+            // PROBLEMA 4
+            // =========================
+            Console.WriteLine(">> PROBLEMA 4");
+            Console.WriteLine("-----------------------------");
+
+            Console.WriteLine("Nota 1: 8");
+            Console.WriteLine("Nota 2: null");
+            Console.WriteLine("Nota 3: 10");
+
+            double promedio = Problema4.CalcularPromedio(8, null, 10);
+            
+            Thread.Sleep(750);
+
+            Console.WriteLine($"\nPromedio: {promedio}");
+
+            Console.WriteLine("\nPresione cualquier tecla para continuar...");
+            Console.ReadKey();
+            Console.Clear();
         }
     }
 }
