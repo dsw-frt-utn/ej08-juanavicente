@@ -1,4 +1,6 @@
-﻿namespace Dsw2026Ej8
+﻿
+
+namespace Dsw2026Ej8
 {
     internal class Program
     {
@@ -114,6 +116,34 @@
             Console.WriteLine("\nPresione cualquier tecla para continuar...");
             Console.ReadKey();
             Console.Clear();
+
+            Thread.Sleep(1500);
+
+            // =========================
+            // PROBLEMA 5
+            // =========================
+            Console.WriteLine(">> PROBLEMA 5");
+            Console.WriteLine("-----------------------------");
+
+            Sale venta1 = new RetailSale(1000);
+            decimal total1 = Problema5.ObtenerImporteFinal(venta1);
+
+            Console.WriteLine("Venta tipo Retail:");
+            Console.WriteLine($"Importe final: {total1}");
+
+            Thread.Sleep(750);
+
+            Sale venta2 = new WholesaleSale(1000);
+            decimal total2 = Problema5.ObtenerImporteFinal(venta2);
+
+            Console.WriteLine("\nVenta tipo Wholesale:");
+            Console.WriteLine($"Importe final: {total2}");
+
+            Console.WriteLine("\nPresione cualquier tecla para continuar...");
+            Console.ReadKey();
+            Console.Clear();
+
+
         }
     }
 }
