@@ -64,6 +64,35 @@
             Console.ReadKey();
             Console.Clear();
 
+            Thread.Sleep(1500);
+
+            // =========================
+            // PROBLEMA 3
+            // =========================
+            Console.WriteLine(">> PROBLEMA 3");
+            Console.WriteLine("-----------------------------");
+
+            int OriginalValue = 10;
+            Product producto = new Product(345789, "Vela de Coco y Vainilla", 1500.50m);
+
+            Console.WriteLine("Antes de llamar al método:");
+            Console.WriteLine($"Valor original: {OriginalValue}");
+            Console.WriteLine($"Descripción del producto: {producto.GetDescription()}");
+
+            string resultado = Problema3.CompararCopias(OriginalValue, producto);
+
+            Thread.Sleep(750);
+
+            Console.WriteLine("\nResultado"); Console.WriteLine(resultado);
+
+            Console.WriteLine("\nDespués de llamar al método:");
+            Console.WriteLine($"Valor original: {OriginalValue}");
+            Console.WriteLine($"Descripción del producto: {producto.GetDescription()}");
+
+            Console.WriteLine("\nPresione cualquier tecla para continuar...");
+            Console.ReadKey();
+            Console.Clear();
+
         }
     }
 }
