@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Dsw2026Ej8.Problema1
+namespace Dsw2026Ej8
 {
     partial class ProductHelper
     {
