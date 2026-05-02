@@ -143,7 +143,38 @@ namespace Dsw2026Ej8
             Console.ReadKey();
             Console.Clear();
 
+            Thread.Sleep(1500);
 
+            // =========================
+            // PROBLEMA 6
+            // =========================
+            Console.WriteLine(">> PROBLEMA 6");
+            Console.WriteLine("-----------------------------");
+
+            string code1 = " ab 123 x ";
+            string resultado1 = Problema6.NormalizarCodigoProducto(code1);
+
+            Console.WriteLine("Entrada:");
+            Console.WriteLine(code1);
+
+            Thread.Sleep(750);
+
+            Console.WriteLine("\nResultado:");
+            Console.WriteLine(resultado1);
+
+            string code2 = null;
+            string resultado2 = Problema6.NormalizarCodigoProducto(code2);
+
+            Console.WriteLine("\nEntrada:");
+            Console.WriteLine("null");
+
+            Thread.Sleep(750);
+
+            Console.WriteLine("\nResultado:");
+            Console.WriteLine(resultado2);
+
+            Console.WriteLine("\nPresione una tecla para salir...");
+            Console.ReadKey();
         }
     }
 }
