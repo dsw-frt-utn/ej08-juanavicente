@@ -87,6 +87,8 @@ namespace Dsw2026Ej8
 
             Console.WriteLine("\nResultado"); Console.WriteLine(resultado);
 
+            Thread.Sleep(750);
+
             Console.WriteLine("\nDespués de llamar al método:");
             Console.WriteLine($"Valor original: {OriginalValue}");
             Console.WriteLine($"Descripción del producto: {producto.GetDescription()}");
