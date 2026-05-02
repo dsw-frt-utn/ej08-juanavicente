@@ -1,6 +1,4 @@
-﻿using Dsw2026Ej8.Problema1;
-
-namespace Dsw2026Ej8
+﻿namespace Dsw2026Ej8
 {
     internal class Program
     {
@@ -21,7 +19,6 @@ namespace Dsw2026Ej8
             Console.WriteLine(">> PROBLEMA 1");
             Console.WriteLine("-----------------------------");
 
-
             ProductHelper helper = new ProductHelper();
 
             long code = 345789;
@@ -36,6 +33,37 @@ namespace Dsw2026Ej8
             Console.WriteLine("\nPresione cualquier tecla para continuar...");
             Console.ReadKey();
             Console.Clear();
+
+            Thread.Sleep(1500);
+
+            // =========================
+            // PROBLEMA 2
+            // =========================
+            Console.WriteLine(">> PROBLEMA 2");
+            Console.WriteLine("-----------------------------");
+
+            long productCode = 345788;
+            string productDescription = "Vela de Lavanda";
+            int quantity = 3;
+            decimal unitPrice = 1200.75m;
+
+            string resumen = Problema2.CrearResumenVenta(productCode, productDescription, quantity, unitPrice);
+
+            Console.WriteLine("Datos de entrada:");
+            Console.WriteLine($"Código: {productCode}");
+            Console.WriteLine($"Descripción: {productDescription}");
+            Console.WriteLine($"Cantidad: {quantity}");
+            Console.WriteLine($"Precio unitario: {unitPrice}");
+
+            Thread.Sleep(750);
+
+            Console.WriteLine("\nResultado:");
+            Console.WriteLine(resumen);
+
+            Console.WriteLine("\nPresione cualquier tecla para continuar...");
+            Console.ReadKey();
+            Console.Clear();
+
         }
     }
 }
