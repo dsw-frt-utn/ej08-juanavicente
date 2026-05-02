@@ -16,7 +16,7 @@ namespace Dsw2026Ej8
 
             copiaProduct.SetDescription("Producto Modificado");
 
-            return $"{OriginalValue} - {CopiarValue} - {product.GetDescription}";
+            return $"{OriginalValue} - {CopiarValue} - {product.GetDescription()}";
         }
     }
 }
