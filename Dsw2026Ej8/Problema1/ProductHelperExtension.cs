@@ -4,7 +4,11 @@ using System.Text;
 
 namespace Dsw2026Ej8.Problema1
 {
-    internal class ProductHelperExtension
+    partial class ProductHelper
     {
+        private string GenerarTextoFormateado(long c, String d, decimal p)
+        {
+            return $"[{c}] {d} - {p:C}";
+        }
     }
 }

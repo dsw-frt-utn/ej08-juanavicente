@@ -2,9 +2,13 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Dsw2026Ej8.Problema_1
+namespace Dsw2026Ej8.Problema1
 {
-    internal class ProductHelper
+    public partial class ProductHelper
     {
+        public string ObtenerEtiquetaProducto(long code, String description, decimal price) 
+        { 
+            return GenerarTextoFormateado(code, description, price);
+        }
     }
 }
